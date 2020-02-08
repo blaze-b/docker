@@ -5,9 +5,23 @@
 4) It is social platform to find and share containers, which are different from virtual machines.
 
 
-#Container
+# Container
 1) It is self contained sealed unit of software
 2) Contains everyting required to run the code.
 3) Includes batteries and OS
 4) It includes:
-   a) Codes
+   a) Codes 
+   b) Configs
+   c) Processes
+   d) Networking
+   e) Dependencies
+
+# Docker Container
+1) A client program
+2) A server program that manages a linux system.
+3) A program that builds container from code.
+4) A service that distributes containers
+5) A company that makes containers
+
+
+
