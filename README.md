@@ -33,11 +33,11 @@ Documents: `https://docs.docker.com/`
 
 # Commands
 
-1) Command : `docker run hello-world` --Command to Check whether docker is working fine
+1. Command : `docker run hello-world` --Command to Check whether docker is working fine
 
-      Output : Unable to find image 'hello-world:latest' locally
-               latest: Pulling from library/hello-world
-               1b930d010525: Pull complete
+      Output : 
+               Unable to find image 'hello-world:latest' locally
+               latest: Pulling from library/hello-world 1b930d010525: Pull complete
                Digest: sha256:9572f7cdcee8591948c2963463447a53466950b3fc15a247fcad1917ca215a2f
                Status: Downloaded newer image for hello-world:latest
 
@@ -63,7 +63,7 @@ Documents: `https://docs.docker.com/`
                https://docs.docker.com/get-started/
 
 
-2) Command: `docker info` --The above command gives the server side info about the docker
+2. Command: `docker info` --The above command gives the server side info about the docker
 
 ----------------------------------------------------------------------------
 
@@ -71,41 +71,66 @@ Documents: `https://docs.docker.com/`
 
 ![alt text](https://github.com/brianblaze14/docker/blob/master/images/Docker_Flow.PNG)
 
-1) Images
+1. Images
 
       Command: `docker images/docker image ls`
 
       Output:
-               REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-               hello-world         latest              fce289e99eb9        13 months ago       1.84kBREPOSITORY
+                REPOSITORY:hello-world           
+                
+                TAG:latest                 
+                
+                IMAGE ID:fce289e99eb9            
+                
+                CREATED:13 months ago             
+                
+                SIZE:1.84kB
 
-Running Container-->
+2. Running Container-->
 
 Command to run the container: `docker run -ti <REPOSITORY_NAME>:<TAG>`
-         eg: `docker run -ti hello-world:latest bash` /ti -- terminal Interactive
+                          eg: `docker run -ti hello-world:latest bash` /ti -- terminal Interactive
 
 Command to list the Container: `docker container ls` / `docker ps` 
 
 
-Stopped Container-->
+3. Stopped Container-->
 
 Command for a stopped Conatainer: `docker ps -l --format=$FORMAT`
 
 Output:
-         CONTAINER ID :d90360cc6dd4
-         IMAGE: hello-world
-         COMMAND: "/hello"          
-         CREATED: 2 hours ago   
-         STATUS: Exited (0) 2 hours ago
-         PORTS:                 
-         NAMES: great_wescoff
+        CONTAINER ID :d90360cc6dd4
+         
+        IMAGE: hello-world
+         
+        COMMAND: "/hello"          
+         
+        CREATED: 2 hours ago   
+         
+        STATUS: Exited (0) 2 hours ago
+         
+        PORTS:                 
+         
+        NAMES: great_wescoff
 
-Commiting Container--> 
+4. Commiting Container--> 
 
-Commiting and creating a new image: 1) `docker commit e758f9fd8b12  -- e758f9fd8b12/Container id` --OUTPUT:sha256:a16eeff5f29036c1c6e320258105087946e9e0716edb27afc5d5c521e59208e1
-2) `docker tag sha256:a16eeff5f29036c1c6e320258105087946e9e0716edb27afc5d5c521e59208e1 my-image` -- Renaming the image
+Commiting and creating a new image: 
 
-Another Way of commiting an image: 1) `docker commit 9b2d94a18f04 my-immage2`
-2) `docker-images`
+1. `docker commit e758f9fd8b12  -- e758f9fd8b12/Container id` --OUTPUT:sha256:a16eeff5f29036c1c6e320258105087946e9e0716edb27afc5d5c521e59208e1
+2. `docker tag sha256:a16eeff5f29036c1c6e320258105087946e9e0716edb27afc5d5c521e59208e1 my-image` -- Renaming the image
+
+Another Way of commiting an image: 
+
+1. `docker commit 9b2d94a18f04 my-immage2`
+2. `docker-images`
 
 ----------------------------------------------------------------------------
+
+# docker run
+
+1. Containers have a main purpose
+2. The containers stop when the process stops
+3. Conatainers have names
+
+
