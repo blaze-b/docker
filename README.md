@@ -1,6 +1,6 @@
-# Docker https://www.docker.com/
-# https://docs.docker.com/
-# Hyper -V Container for creating linux containers
+# Docker https://www.docker.com/  https://docs.docker.com/
+
+Hyper -V Container for creating linux containers
 
 1) Carves up a computer into a sealed containers that run your code.
 2) Gets the code to and from your computer
@@ -26,12 +26,12 @@
 4) A service that distributes containers
 5) A company that makes containers
 
+# Commands
+
 1) Command : docker run hello-world
  Above output indicates that the docker is working fine.
 
-Output :
-
-Unable to find image 'hello-world:latest' locally
+Output : Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world
 1b930d010525: Pull complete
 Digest: sha256:9572f7cdcee8591948c2963463447a53466950b3fc15a247fcad1917ca215a2f
@@ -58,14 +58,15 @@ Share images, automate workflows, and more with a free Docker ID:
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 
- ----------------------------------------------------------------
 
 2) Command: docker info
 
 The above command gives the server side info about the docker
 
 -----------------------------------------------------------------
-# Docker Flow
+# Docker Flow 
+
+![Screenshot](Docker_Flow.PNG)
 
 1) Images
 
@@ -103,3 +104,4 @@ Another Way
 2) docker-images
 
 
+----------------------------------------------------------------------------
