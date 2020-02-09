@@ -66,7 +66,7 @@ The above command gives the server side info about the docker
 -----------------------------------------------------------------
 # Docker Flow 
 
-![Screenshot](Docker_Flow.PNG)
+![alt text](https://github.com/brianblaze14/docker/blob/master/images/Docker_Flow.PNG)
 
 1) Images
 
